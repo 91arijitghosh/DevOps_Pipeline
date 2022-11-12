@@ -13,6 +13,7 @@ pipeline{
     {
       steps{
         echo "This is testing Stage"
+        cat bugfix.txt
       }
     }  
     stage('Deploy')
