@@ -12,8 +12,10 @@ pipeline{
     stage('Test')
     {
       steps{
+        sh'''#!/bin/bash
         echo "This is testing Stage"
-        cat bugfix.txt
+        cat bugfix.txt  
+        '''
       }
     }  
     stage('Deploy')
